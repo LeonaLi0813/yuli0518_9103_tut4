@@ -29,3 +29,9 @@ This code technique can solve the speckled part of the main mushroom in the pict
   ```
 - Also, we should define `randomPosition`, `randomAngle`, `randomRadius` to make the circles show in random places.
 
+
+### 2.Voronoi
+[link of making Voronoi](https://editor.p5js.org/MR-Addict/sketches/VthoYyYFm)
+
+![An image of the example](assets/Voronoi.png)
+Voronoi split code technology can solve the background of this artwork, and with some upgrades and random generation can be close to the original.
