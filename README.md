@@ -3,10 +3,12 @@ My first repository for IDEA9103
 
 This is my first local change to the repo!
 
-## Choose the artwork
-The artist who I love is **Yayoi Kusama**. She is famous as **"the princess of polka dots"**.Her artwork is bold in colour and innovative in form, but also I think it lends itself well to being presented in code.
+## Choose the technique
+In the film **Doctor Strange**, Dr Strange would use magic to create a **circle** and was free to travel through space. And this magic circle would be accompanied by many **sparks**. I want to try to create such magic circle with sparks effect by using the code
 
-![An image of the artwork](assets/YAYOI%20KUSAMA.jpg)
+[link of magic circle](https://www.youtube.com/watch?v=6BC_fbZoOdA)
+
+![An image of the artwork](assets/magic%20circle.png)
 
 ### 1.Apollonian Gasket
 
