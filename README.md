@@ -12,3 +12,20 @@ The artist who I love is **Yayoi Kusama**. She is famous as **"the princess of p
 
 [link of making Apllonian gasket in p5.js](https://editor.p5js.org/jcponce/sketches/9yollBM7C)
 
+![An image of the example](assets/Apollonian.png)
+This code technique can solve the speckled part of the main mushroom in the picture.
+
+**-Main code**
+
+- Use "drawApllonian" in `function setup()` 
+  
+  ```
+  function setup() {
+  drawApollonian();}
+  ```
+- Use `function drawApollonian()`
+  ```
+  function drawApollonian() {}
+  ```
+- Also, we should define `randomPosition`, `randomAngle`, `randomRadius` to make the circles show in random places.
+
