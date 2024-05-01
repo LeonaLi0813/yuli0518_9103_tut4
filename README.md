@@ -35,3 +35,25 @@ This code technique can solve the speckled part of the main mushroom in the pict
 
 ![An image of the example](assets/Voronoi.png)
 Voronoi split code technology can solve the background of this artwork, and with some upgrades and random generation can be close to the original.
+
+**-Main code**
+
+- Save random points in the seeds array in `function setup()`.
+  ```
+  function setup() {
+  for (let i = 0; i < 100; i++) {
+    seeds.push([random(width), random(height)]);
+  }}
+
+  ```
+- Use `delaunay` and `voronoi` in `function draw()` to paint the Voronoi shape.
+  ```
+  function draw() {
+
+  const delaunay = d3.Delaunay.from(seeds);
+
+  const voronoi = delaunay.voronoi([0, 0, width, height]);
+  }
+
+  ```
+- We can also use `renderPolygons` to have different fills, but considering that the background of the original image is only one colour, so we don not need to do that.
