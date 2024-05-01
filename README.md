@@ -10,12 +10,12 @@ In the film **Doctor Strange**, Dr Strange would use magic to create a **circle*
 
 ![An image of the artwork](assets/magic%20circle.png)
 
-### 1.Apollonian Gasket
+### Blossom Particle
 
-[link of making Apllonian gasket in p5.js](https://editor.p5js.org/jcponce/sketches/9yollBM7C)
+[link of making blossom particle in p5.js](https://editor.p5js.org/AnonymousPyro/sketches/Q2XUJXm5)
 
-![An image of the example](assets/Apollonian.png)
-This code technique can solve the speckled part of the main mushroom in the picture.
+![An image of the example](assets/sparkle.png)
+This is the code for an effect where particles bloom in the shape of a heart on mouse click. I think I can achieve the effect I want by turning the heart into a circle, and then changing the way the particles move, from clicking to automatic continuous emission.
 
 **-Main code**
 
@@ -30,32 +30,3 @@ This code technique can solve the speckled part of the main mushroom in the pict
   function drawApollonian() {}
   ```
 - Also, we should define `randomPosition`, `randomAngle`, `randomRadius` to make the circles show in random places.
-
-
-### 2.Voronoi
-[link of making Voronoi](https://editor.p5js.org/MR-Addict/sketches/VthoYyYFm)
-
-![An image of the example](assets/Voronoi.png)
-Voronoi split code technology can solve the background of this artwork, and with some upgrades and random generation can be close to the original.
-
-**-Main code**
-
-- Save random points in the seeds array in `function setup()`.
-  ```
-  function setup() {
-  for (let i = 0; i < 100; i++) {
-    seeds.push([random(width), random(height)]);
-  }}
-
-  ```
-- Use `delaunay` and `voronoi` in `function draw()` to paint the Voronoi shape.
-  ```
-  function draw() {
-
-  const delaunay = d3.Delaunay.from(seeds);
-
-  const voronoi = delaunay.voronoi([0, 0, width, height]);
-  }
-
-  ```
-- We can also use `renderPolygons` to have different fills, but considering that the background of the original image is only one colour, so we don not need to do that.
