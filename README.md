@@ -19,14 +19,26 @@ This is the code for an effect where particles bloom in the shape of a heart on 
 
 **-Main code**
 
-- Use "drawApllonian" in `function setup()` 
+- Create an array of all particles 
   
   ```
-  function setup() {
-  drawApollonian();}
+  let particles = [];
   ```
-- Use `function drawApollonian()`
+- Use `function ContructHeart()`to Initialise all examples in the array.
   ```
-  function drawApollonian() {}
+  function ConstructHeart(h, k) {
+  let partOfParticles = [];  
+  }
   ```
-- Also, we should define `randomPosition`, `randomAngle`, `randomRadius` to make the circles show in random places.
+- Create the centre of the heart and make it the central emission point of the particles.
+  ```
+  let center = createVector(h, k);  
+  partOfParticles.push(center); 
+  ```
+
+- Print out the number of particles in the heart
+  ```
+  particles.push(partOfParticles);
+  console.log(partOfParticles.length);
+  ```
+- Then use `function draw()` to paint the particles
